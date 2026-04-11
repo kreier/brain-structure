@@ -3,7 +3,11 @@
 ![GitHub License](https://img.shields.io/github/license/kreier/brain-structure)
 ![GitHub Release](https://img.shields.io/github/v/release/kreier/brain-structure)
 
-This documents the structure of my **brain** project to collect and analyze my conversations with LLMs. And brain is obviously private.
+This documents the structure of my **brain** project to collect and analyze my conversations with LLMs. And brain is obviously private. Here some statistics of my use case:
+
+- ChatGPT started 2023/04/20 with "_tell me something about scott's stick insect_"
+- Claude start 2024/07/20 with "_how can i import a csv file in python with pandas_"
+- Gemini start 2024/10/11 with "_Hey Google, what time is it in Germany_"
 
 ## Get the raw data
 
