@@ -24,7 +24,12 @@ And since I have some Android phones, whenever you ask "OK Google" on your Googl
 
 ### Claude
 
-Instructions will follow. Should be JSON that you get via email.
+The steps are: **Claude** → `claude.ai` Settings → Export data → JSON. Claude will then send you an email with a zip file that contains four json files:
+
+- conversations.json
+- memories.json
+- projects.json
+- users.json
 
 ### ChatGPT
 
