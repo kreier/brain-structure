@@ -5,6 +5,31 @@
 
 This documents the structure of my **brain** project to collect and analyze my conversations with LLMs. And brain is obviously private.
 
+## Get the raw data
+
+It would be great if there was just a button "Download conversations as JSON or MD" but it is not. There are plugins, but they require sometimes to click on every single conversation. It can't be that complicated, now can it?
+
+### Google Gemini
+
+The output is currently only HTML plus created images as jpg.
+
+- Go to [takeout.google.com](https://takeout.google.com).
+- Click **Deselect all**.
+- Find **My Activity** and click the button "All activity data included."
+- Deselect everything and check **ONLY "Gemini Apps."**
+- Proceed to the next step and create the export.
+- [!IMPORTANT]<br>**The Takeout "Gotcha":** In the Takeout list, there is a separate "Gemini" category. **Do not use that.** That category only exports your "Gems" (custom instructions) and settings. To get your actual chat history, you must use the **My Activity > Gemini Apps** path mentioned above.
+
+And since I have some Android phones, whenever you ask "OK Google" on your Google home or Android phone, you get an entry that late has to be cleaned out. Better use the following two ones:
+
+### Claude
+
+Instructions will follow. Should be JSON that you get via email.
+
+### ChatGPT
+
+Instructions will follow. Should be JSON that you get via email.
+
 ## Ideas
 
 I got some ideas about reflecting on my conversations with AI and to learn from them. The structure:
