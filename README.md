@@ -113,3 +113,11 @@ The `sources/*.json` files stay as the canonical source of truth — the vault i
 ### Using Codex
 
 The conversion to TypeScript was done with Codex - but not automatically part of the commit. Let's change that.
+
+Let's try this:
+
+```sh
+git commit -m "Refactor auth logic
+
+Co-authored-by: Codex <codex@openai.com>"
+```
