@@ -109,3 +109,7 @@ Writes to `vault/chatgpt/`, `vault/gemini/`, `vault/claude/` — one `.md` per c
 ### Summary
 
 The `sources/*.json` files stay as the canonical source of truth — the vault is always regeneratable from them. When you later want a different output format (Genspark, Notion, whatever), you just write a new exporter on top of the same source files.
+
+### Using Codex
+
+The conversion to TypeScript was done with Codex - but not automatically part of the commit. Let's change that.
