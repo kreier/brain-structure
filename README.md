@@ -121,3 +121,60 @@ git commit -m "Refactor auth logic
 
 Co-authored-by: Codex <codex@openai.com>"
 ```
+
+## Refinement in August 2026
+
+After some conversations with Jesse I updated some of my ideas. The storage of the second brain stays an Obsidian vault - many connected markdown files with **frontmatter**. But the system would get an `/raw/inbox` folder for new ideas or additional data to be processed and integrated. It would continoually grow. And the inbox is preferably also in markdown. I had JSON files for conversations with AI. A standardized import format with structure for `[agent]` and `[user]` (Maybe better like described below).
+
+### Frontmatter YAML
+
+``` YAML
+---
+title: "Optimizing PostgreSQL Queries for Multi-Tenant Data"
+date: 2026-08-08
+updated: 2026-08-08
+type: ai-chat
+tags:
+  - ai/claude
+  - topic/database
+  - dev/postgres
+source:
+  provider: Anthropic
+  model: Claude 3.5 Sonnet
+  chat_id: "conv-98234-xyz"
+  url: "https://claude.ai/chat/conv-98234-xyz"
+summary: "Explored index strategies and partition schemes for multi-tenant databases."
+key_takeaways:
+  - "Partial indexes reduce index size significantly for soft-deleted rows."
+  - "Use hash partitioning when tenant key distribution is uniform."
+status: archived # Options: raw, processed, evergreen
+---
+```
+
+###  Markdown
+
+``` md
+# Optimizing PostgreSQL Queries for Multi-Tenant Data
+
+## Overview
+Brief contextual note on why this chat was initiated.
+
+---
+
+## 👤 User
+How do I handle soft deletes in PostgreSQL without degrading query performance on large tables?
+
+## 🤖 Claude (3.5 Sonnet)
+Soft deletes can be efficiently managed using **partial indexes**...
+
+```sql
+CREATE INDEX idx_active_users ON users (tenant_id) WHERE deleted_at IS NULL;
+```
+
+### Folder & Namin Structure
+
+**File Naming:** `YYYY-MM-DD - [Provider] - Short Topic Name.md`
+
+Example: `2026-08-08 - Claude - Postgres Soft Delete Strategies.md`
+
+An article about this is [How to Build an AI Second Brain with a Built-In CRM and Journal](https://www.mindstudio.ai/blog/how-to-build-ai-second-brain-crm-journal)
